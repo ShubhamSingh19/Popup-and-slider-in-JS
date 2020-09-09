@@ -1,0 +1,161 @@
+#blur-section.active {
+  filter: brightness(40%) blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.popup-section {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 69%;
+  height: 51%;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.popup-section.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.popup-image-video-container {
+  position: fixed;
+  top: 0%;
+  left: 13%;
+  width: 73.7%;
+  margin: auto;
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+#popup-image {
+  width: 100%;
+  height: auto;
+}
+#popup-video {
+  width: 510px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.popup-close {
+  position: fixed;
+  top: -3%;
+  right: 9.6%;
+  width: 1.5rem;
+}
+
+.popup-prev {
+  width: 2.5rem;
+  position: fixed;
+  top: 39%;
+  left: 0%;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+}
+
+.popup-next {
+  width: 2.5rem;
+  position: fixed;
+  top: 39%;
+  right: 0%;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+}
+
+.popup-title {
+  text-transform: uppercase;
+  color: #329d65;
+  margin: 0.2rem 0 0.5rem 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.08rem;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Adjustment for FULL HD screen */
+@media only screen and (max-width: 1920px) {
+  .popup-section {
+    width: 45.4%;
+  }
+  .popup-image-video-container {
+    width: fit-content;
+  }
+  #popup-image {
+    height: 320px;
+    width: 510px;
+  }
+  #popup-video {
+    width: 510px;
+    height: 320px;
+  }
+}
+
+/* Adjustment for 1440 screen */
+@media only screen and (max-width: 1440px) {
+  .popup-section {
+    width: 48%;
+    margin: auto;
+  }
+  .popup-image-video-container {
+    width: fit-content;
+  }
+  #popup-image {
+    height: auto;
+    width: 510px;
+  }
+  #popup-video {
+    width: 510px;
+    height: 320px;
+  }
+
+  .popup-prev {
+    position: fixed;
+    top: 32%;
+    left: 1%;
+  }
+
+  .popup-next {
+    position: fixed;
+    top: 32%;
+    right: -2%;
+  }
+
+  .popup-close {
+    position: fixed;
+    top: -3%;
+    right: 8%;
+  }
+}
+
+/* Adjustment for HD screen */
+@media only screen and (max-width: 1280px) {
+  .popup-section {
+    width: 55%;
+    margin: auto;
+  }
+  .popup-image-video-container {
+    width: fit-content;
+  }
+  #popup-image {
+    height: auto;
+    width: 510px;
+  }
+  #popup-video {
+    width: 510px;
+    height: 320px;
+  }
+}

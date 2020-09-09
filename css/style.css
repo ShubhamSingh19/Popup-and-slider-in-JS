@@ -1,0 +1,428 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+main {
+  background-image: url("../img/main_bg.jpg");
+  margin: 4.5rem 0 0 0;
+  width: 100%;
+}
+section {
+  margin-bottom: 0.8rem;
+}
+img {
+  vertical-align: middle;
+}
+
+#main-container {
+  width: 76%;
+  min-height: 1348px;
+  margin: auto;
+}
+
+#slider-img {
+  width: 100%;
+}
+
+.slider {
+  display: none;
+}
+
+/* Slideshow container */
+#slider-container {
+  position: relative;
+  margin-bottom: 1.1rem;
+}
+
+#slider-title {
+  text-transform: uppercase;
+  color: #329d65;
+  position: absolute;
+  right: 2rem;
+  top: 5.3rem;
+  font-size: 1.2rem;
+}
+
+#slider-text {
+  color: grey;
+  position: absolute;
+  right: 2.8rem;
+  bottom: 8.8rem;
+  width: 12rem;
+  font-size: 0.9rem;
+  word-break: break-all;
+  line-height: 1.2rem;
+}
+
+#slider-container .learn-more {
+  position: absolute;
+  left: unset;
+  bottom: 2.9rem;
+  right: 5.7rem;
+}
+
+#dots-container {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.4rem;
+  width: fit-content;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 0.03rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#life-style-container {
+  background-image: url("../img/lifestyle_box_bg.jpg");
+  height: 295px;
+  background-repeat: repeat-x;
+  padding: 1.01rem 0rem 1.01rem 1.5rem;
+  margin: auto auto 1.5rem auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.heading {
+  line-height: 1.2rem;
+  margin: 0.2rem auto;
+  padding: 0 0 0.12rem 0;
+  color: #329d65;
+  text-transform: uppercase;
+  border-bottom: 2px solid #329d65;
+  letter-spacing: 0.039rem;
+}
+
+.life-style-sections {
+  float: left;
+  margin: 0.5rem 0;
+  height: 15.7rem;
+  position: relative;
+  color: #666666;
+  z-index: 1;
+  padding: auto 0;
+}
+#life-style-container .heading {
+  margin: 0.2rem 1.5rem 0.2rem auto;
+}
+
+.life-style-sections:nth-of-type(even) {
+  border-left: 1px solid rgba(211, 211, 211, 0.808);
+  border-right: 1px solid rgba(211, 211, 211, 0.808);
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-34-2 {
+  width: 34.2%;
+}
+.w-34-5 {
+  width: 34.5%;
+}
+
+p {
+  margin-top: 0.4rem;
+  margin-bottom: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0.6rem;
+  color: #666666;
+}
+.learn-more {
+  font-size: 0.6rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #329d65;
+  background: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #329d65;
+  padding: 0.35rem 0.68rem;
+  width: 7.5rem;
+}
+.learn-more img {
+  height: 0.66rem;
+}
+
+.sub-section {
+  float: left;
+  padding: 0 0.6rem;
+  width: 42%;
+  height: auto;
+}
+
+.s1 {
+  width: 42%;
+}
+.s2 {
+  width: 41.48%;
+}
+.sub-section:nth-last-of-type(odd) {
+  border-left: 2px solid rgb(221, 221, 221);
+}
+.sub-section img {
+  width: 6.8rem;
+  margin: 0.22rem 0;
+  padding: 0;
+}
+.sub-heading {
+  color: grey;
+  padding: 0.3rem 1rem 0 0.9rem;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.024rem;
+}
+
+.sub-section-heading {
+  color: #329d65;
+  padding: 0 0 0 0.4rem;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.024rem;
+  font-weight: 500;
+}
+
+.sub-section p {
+  margin-bottom: 0.4rem;
+  padding: 0.2rem 0 0 0.4rem;
+}
+#customers-news-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+#customers-container {
+  width: 59.5%;
+  padding: 0;
+}
+#customers-container img {
+  width: 9.1rem;
+  height: auto;
+  margin: 0 5px 0px -7px;
+  padding: 0;
+  cursor: pointer;
+}
+#customers-container p {
+  line-height: 1rem;
+  margin: 0;
+  margin-top: 0.9rem;
+  padding: 0;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; */
+}
+
+.learn-more-text {
+  color: #329d65;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.continue-reading-text {
+  color: #329d65;
+  cursor: pointer;
+}
+#news-heading-container {
+  width: 32.2%;
+}
+
+#news-heading-container hr {
+  margin-top: 1.16rem;
+  margin-bottom: 1.7rem;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+.news-heading {
+  color: #329d65;
+  line-height: 0.19rem;
+  font-size: 0.6rem;
+}
+.news-date {
+  margin-top: -14px;
+  font-size: 0.6rem;
+  color: grey;
+}
+.news-container p {
+  line-height: 1rem;
+  margin-top: -11px;
+  margin-bottom: 0;
+}
+
+#photos-videos-container {
+  margin: auto;
+  background-image: url("../img/lifestyle_box_bg.jpg");
+  display: flex;
+  justify-content: space-between;
+  padding: 0.74rem 2rem 0rem 2.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#photos-videos-container img {
+  width: 9.2rem;
+  height: auto;
+  margin: 1rem 0rem -0.45rem -0.4rem;
+  padding: 0;
+  cursor: pointer;
+}
+#photos-videos-container p {
+  margin-top: 1.1rem;
+  line-height: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#photos-container {
+  width: 43.3%;
+}
+#videos-container {
+  width: 43.3%;
+}
+.container {
+  display: flex;
+  flex: 1 1 50%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+.thumbnail-container {
+  margin-bottom: 0;
+}
+
+/* Adjustment for 1440px screen */
+@media only screen and (max-width: 1440px) {
+  #main-container {
+    width: 53.6% !important;
+  }
+}
+
+/* Adjustment for FULL HD screen */
+@media only screen and (max-width: 1920px) {
+  #main-container {
+    /* width: 40.4%; */
+    width: 50.2%;
+  }
+}
+
+/* Adjustment for HD screen */
+@media only screen and (max-width: 1280px) {
+  #main-container {
+    width: 60.8% !important;
+  }
+}
+
+/* Adjustment for  mobile screen */
+/* @media only screen and (max-width: 360px) {
+  #blur-section {
+    width: 100%;
+    margin: auto;
+  }
+  #main-container {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+  #life-style-container {
+    width: 100%;
+    height: 750px;
+    background-color: rgb(241, 241, 241);
+  }
+  .life-style-sections {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    height: fit-content;
+  }
+  .learn-more {
+    position: relative;
+  }
+  div > img {
+    width: 5px;
+    height: auto;
+  }
+  #customers-news-container {
+    display: block;
+    width: 100%;
+  }
+  #customers-container {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  #news-heading-container {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  #photos-videos-container {
+    width: fit-content;
+    display: block;
+    text-align: center;
+  }
+  #photos-videos-container img {
+    width: 7rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .thumbnail-container {
+    width: fit-content;
+    float: left;
+  }
+  #photos-container {
+    display: block;
+    width: 85% !important;
+  }
+  #videos-container {
+    display: block;
+    width: 85% !important;
+  }
+} */
