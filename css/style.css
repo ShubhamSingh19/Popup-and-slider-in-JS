@@ -3,6 +3,7 @@ body {
   font-family: sans-serif;
   height: 100%;
 }
+/*main*/
 main {
   background-image: url("../img/main_bg.jpg");
   margin: 4.5rem 0 0 0;
